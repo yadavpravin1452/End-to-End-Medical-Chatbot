@@ -24,3 +24,34 @@ conda activate medibot
 ```bash
 pip install -r requirements.txt
 ```
+
+### Create a `.env` file in the root directory and add your Pinecone and Openai Credentail as follow:
+
+```ini
+PINECONE_API_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+OPENAI_API_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+```
+
+```bash
+# run the following command  to store  embeddings to Pinecone
+python store_index.py
+```
+
+```bash
+#Finally run the following command
+python app.py
+```
+
+```bash
+open up localhost:
+```
+
+
+## Techstack Used:
+- Python
+- Langchain
+- Flask
+- HuggingFace -> Llama
+- Pinecone
+
+
